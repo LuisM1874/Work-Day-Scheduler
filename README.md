@@ -29,4 +29,4 @@ THEN the saved events persist
 ## Links
 
 Source code can be found here :https://github.com/LuisM1874/Work-Day-Scheduler
-Deployed site can be found here : 
+Deployed site can be found here :  https://luism1874.github.io/Work-Day-Scheduler/
