@@ -1,6 +1,19 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// Global variables
+var localeSettings = {};
+dayjs.locale(localeSettings);
+
+// Date and time in header
+function dateAndTime() {
+  var dateElement = $('#date');
+  var timeElement = $('#time');
+  var currentDate = dayjs().format('dddd, MMMM D, YYYY');
+  var currentTime = dayjs().format('HH:mm:ss');
+  dateElement.text(currentDate);
+  timeElement.text(currentTime);
+}
+setInterval(dateAndTime, 1000);
+
+//
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
